@@ -45,7 +45,7 @@ const { data: someData } = useScaffoldReadContract({
 
 ### Writing data to a contract
 Use the `useScaffoldWriteContract` (`packages/nextjs/hooks/scaffold-eth/useScaffoldWriteContract.ts`) hook.
-1. Initilize the hook with just the contract name
+1. Initialize the hook with just the contract name
 2. Call the `writeContractAsync` function.
 
 Example:
