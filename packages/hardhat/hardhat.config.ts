@@ -28,7 +28,7 @@ const config: HardhatUserConfig = {
   solidity: {
     compilers: [
       {
-        version: "0.8.20",
+        version: "0.8.27",
         settings: {
           optimizer: {
             enabled: true,
@@ -39,7 +39,7 @@ const config: HardhatUserConfig = {
       },
     ],
   },
-  defaultNetwork: "localhost",
+  defaultNetwork: "flowTestnet",
   namedAccounts: {
     deployer: {
       // By default, it will take the first Hardhat account as the deployer
@@ -49,6 +49,14 @@ const config: HardhatUserConfig = {
   networks: {
     // View the networks that are pre-configured.
     // If the network you are looking for is not here you can add new network settings
+    flow: {
+      url: "https://mainnet.evm.nodes.onflow.org",
+      accounts: [deployerPrivateKey],
+    },
+    flowTestnet: {
+      url: "https://testnet.evm.nodes.onflow.org",
+      accounts: [deployerPrivateKey],
+    },
     hardhat: {
       forking: {
         url: `https://eth-mainnet.alchemyapi.io/v2/${providerApiKey}`,
