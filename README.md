@@ -24,7 +24,7 @@ The usual dev flow is:
 - Iterate until you get the functionality you want in your contract
 - Write tests for the contract in `packages/hardhat/test`
 - Create your custom UI using all the SE-2 components, hooks, and utilities.
-- Deploy your Smart Contrac to a live network
+- Deploy your Smart Contract to a live network
 - Deploy your UI (`yarn vercel` or `yarn ipfs`)
   - You can tweak which network the frontend is pointing (and some other configurations) in `scaffold.config.ts`
 
